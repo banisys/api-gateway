@@ -11,4 +11,4 @@ test run:
 	go test ./test/... -v -count=1
 
 dev:
-	go run ./cmd/user-service
+	go run ./cmd/api-gateway

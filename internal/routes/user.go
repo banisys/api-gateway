@@ -5,8 +5,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func RegisterUserRoutes(route *gin.Engine) {
+func RegisterRoutes(route *gin.Engine) {
 
-	route.POST("/signup", handlers.Signup)
+	route.POST("/user-service/*path", handlers.Signup)
 
 }
