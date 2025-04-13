@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/banisys/api-gateway/internal/grpc_client"
 	"github.com/banisys/api-gateway/internal/routes"
 
 	"github.com/gin-gonic/gin"
@@ -9,7 +10,9 @@ import (
 func main() {
 	route := gin.Default()
 
-	routes.RegisterRoutes(route)
+	var GrpcSignupStruct grpc_client.GrpcSignupStruct
+
+	routes.RegisterRoutes(route, GrpcSignupStruct)
 
 	route.Run(":8081")
 }
