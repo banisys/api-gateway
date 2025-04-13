@@ -1,0 +1,20 @@
+.
+├── cmd
+│   └── api-gateway
+│       └── main.go
+├── go.mod
+├── go.sum
+├── internal
+│   ├── grpc_client
+│   │   └── grpc_client.go
+│   ├── handlers
+│   │   └── user_handler
+│   │       └── user_handler.go
+│   ├── models
+│   │   └── user.go
+│   └── routes
+│       └── user.go
+
+bakhshi az saakhtaare file project raa dar baalaa ovordam
+baraaye mock kardan method GrpcSignup majboor shodam aan raa az biroon pass bedam
+aayaa raveshe dorosti ast?

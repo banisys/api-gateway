@@ -10,9 +10,9 @@ import (
 func main() {
 	route := gin.Default()
 
-	var GrpcSignupStruct grpc_client.GrpcSignupStruct
+	var grpcSignupStruct grpc_client.GrpcSignupStruct
 
-	routes.RegisterRoutes(route, GrpcSignupStruct)
+	routes.RegisterRoutes(route, grpcSignupStruct)
 
 	route.Run(":8081")
 }
